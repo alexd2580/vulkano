@@ -157,7 +157,7 @@ impl Instance {
                 applicationVersion: app_infos.application_version.map(|v| v.into_vulkan_version()).unwrap_or(0),
                 pEngineName: app_infos_strings.as_ref().unwrap().1.as_ref().map(|s| s.as_ptr()).unwrap_or(ptr::null()),
                 engineVersion: app_infos.engine_version.map(|v| v.into_vulkan_version()).unwrap_or(0),
-                apiVersion: Version { major: 1, minor: 0, patch: 0 }.into_vulkan_version(),      // TODO:
+                apiVersion: Version { major: 1, minor: 0, patch: 2 }.into_vulkan_version(),      // TODO:
             })
 
         } else {
